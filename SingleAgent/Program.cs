@@ -2,6 +2,7 @@ using Microsoft.Agents.Protocols.Primitives;
 using Microsoft.SemanticKernel;
 using Microsoft.Agents.Hosting.Setup;
 using SingleAgent.Bots;
+using SingleAgent.Agents;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,6 +35,7 @@ else
         apiKey: builder.Configuration.GetSection("AIServices:OpenAI").GetValue<string>("ApiKey"));
 }
 
+builder.Services.AddTransient<TravelAgent>();
 builder.AddBot<IBot, BasicBot>();
 
 var app = builder.Build();

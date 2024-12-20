@@ -1,17 +1,30 @@
 ﻿using Microsoft.Agents.Protocols.Adapter;
 using Microsoft.Agents.Protocols.Primitives;
+using SingleAgent.Agents;
 
 namespace SingleAgent.Bots
 {
     public class BasicBot: ActivityHandler
     {
+        private TravelAgent _travelAgent;
+
+        public BasicBot(TravelAgent travelAgent)
+        {
+            _travelAgent = travelAgent;
+        }
+
         protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
         {
-            // Create a new Activity from the message the user provided and modify the text to echo back.
-            IActivity message = MessageFactory.Text($"Echo: {turnContext.Activity.Text}");
+            var response = await _travelAgent.InvokeAgentAsync(turnContext.Activity.Text);
+            if (response == null)
+            {
+                await turnContext.SendActivityAsync(MessageFactory.Text("Sorry, I couldn't get the weather forecast at the moment."), cancellationToken);
+                return;
+            }
 
-            // Send the response message back to the user. 
-            await turnContext.SendActivityAsync(message, cancellationToken);
+            var textResponse = MessageFactory.Text(response);
+
+            await turnContext.SendActivityAsync(textResponse, cancellationToken);
         }
 
         protected override async Task OnMembersAddedAsync(IList<ChannelAccount> membersAdded, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
