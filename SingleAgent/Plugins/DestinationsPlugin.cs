@@ -6,8 +6,8 @@ namespace SingleAgent.Plugins
 {
     public class DestinationsPlugin
     {
-        [KernelFunction, Description("Get a list of available destinations.")]
-        public List<Destination> GetDestinations([Description("A list of tags that describes the type of trip the customer is trying to organize. You can only support one of the followng values: City, Culture, Art, Fashion, Landmarks, Shopping, Technology, Food, Beaches, Nightlife, Architecture")] string[] tags)
+        [KernelFunction, Description("Get a list of available destinations")]
+        public List<Destination> GetDestinations([Description("A list of tags that describes the type of trip the customer is trying to organize. You can only choose among the following values: City, Culture, Art, Fashion, Landmarks, Shopping, Technology, Food, Beaches, Nightlife, Architecture")] string[] tags)
         {
             List<Destination> destinations = new List<Destination>
             {
