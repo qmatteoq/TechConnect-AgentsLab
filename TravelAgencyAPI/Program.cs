@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using Scalar.AspNetCore;
 using TravelAgency.Shared.Models;
 
 var builder = WebApplication.CreateBuilder(args);
