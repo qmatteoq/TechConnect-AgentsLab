@@ -12,7 +12,6 @@ namespace SingleAgent.Agents
         private readonly Kernel _kernel;
         private readonly ChatHistory _chatHistory;
         private readonly ChatCompletionAgent _agent;
-        private int retryCount;
 
         private const string AgentName = "TravelAgent";
         private const string AgentInstructions = """

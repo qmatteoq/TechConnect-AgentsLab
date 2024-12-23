@@ -1,0 +1,10 @@
+@TravelAgencyAPI_HostAddress = http://localhost:5074
+
+GET {{TravelAgencyAPI_HostAddress}}/destinations?tag=culture&tag=nightlife
+Accept: application/json
+Content-Type: application/json
+
+
+
+###
+  

@@ -11,13 +11,17 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Agents.Authentication" Version="0.1.26" />
     <PackageReference Include="Microsoft.Agents.Authentication.Msal" Version="0.1.26" />
-    <PackageReference Include="Microsoft.Agents.Hosting.AspNetCore" Version="0.1.26" />
+    <PackageReference Include="Microsoft.Agents.Hosting.AspNetCore" Version="0.1.26" /> 
     <PackageReference Include="Microsoft.IdentityModel.Validators" Version="8.3.0" />
     <PackageReference Include="Microsoft.SemanticKernel.Agents.Core" Version="1.32.0-alpha" />
     <PackageReference Include="Microsoft.SemanticKernel.Agents.OpenAI" Version="1.32.0-alpha" />
     <PackageReference Include="Microsoft.SemanticKernel.Connectors.AzureOpenAI" Version="1.32.0" />
     <PackageReference Include="Microsoft.SemanticKernel.Connectors.OpenAI" Version="1.32.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TravelAgency.Shared\TravelAgency.Shared.csproj" />
   </ItemGroup>
 
 </Project>

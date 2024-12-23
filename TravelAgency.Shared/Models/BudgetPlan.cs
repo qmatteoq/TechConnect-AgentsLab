@@ -1,11 +1,13 @@
-﻿namespace SingleAgent.Models
+﻿namespace TravelAgency.Shared.Models
 {
-    public class Destination
+    public class BudgetPlan
     {
         public string Location { get; set; }
         public string Country { get; set; }
 
         public string Description { get; set; }
-        public  string[] Tags { get; set; }
+
+        public double MaximumBudget { get; set; }
+
     }
 }

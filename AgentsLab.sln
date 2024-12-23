@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleAgent", "SingleAgent\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiAgent", "MultiAgent\MultiAgent.csproj", "{8C142974-1411-47A2-8B51-D109748F92F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelAgency.Shared", "TravelAgency.Shared\TravelAgency.Shared.csproj", "{9EF6427F-7381-422C-91BF-1906041A6491}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelAgencyAPI", "TravelAgencyAPI\TravelAgencyAPI.csproj", "{8637FA5A-FE30-4DF8-870B-7D4451F84316}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{8C142974-1411-47A2-8B51-D109748F92F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C142974-1411-47A2-8B51-D109748F92F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C142974-1411-47A2-8B51-D109748F92F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EF6427F-7381-422C-91BF-1906041A6491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EF6427F-7381-422C-91BF-1906041A6491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EF6427F-7381-422C-91BF-1906041A6491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EF6427F-7381-422C-91BF-1906041A6491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8637FA5A-FE30-4DF8-870B-7D4451F84316}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8637FA5A-FE30-4DF8-870B-7D4451F84316}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8637FA5A-FE30-4DF8-870B-7D4451F84316}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8637FA5A-FE30-4DF8-870B-7D4451F84316}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
